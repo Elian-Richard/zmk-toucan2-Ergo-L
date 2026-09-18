@@ -26,50 +26,50 @@
         base {
             display-name = "BASE";
             bindings = <
-                &kp TAB   &kp FR_Q &kp FR_C &kp FR_O    &kp FR_P &kp FR_W  &kp FR_J   &kp FR_M &kp FR_D &kp FR_QUOT &kp FR_Y &kp DEL  
-                &kp LSHFT &kp FR_A &kp FR_S &kp FR_E    &kp FR_N &kp FR_F  &kp FR_L   &kp FR_R &kp FR_T &kp FR_I    &kp FR_U &kp LALT  
-                &kp LCTRL &kp FR_Z &kp FR_X &kp FR_MINS &kp FR_V &kp FR_B  &kp FR_DOT &kp FR_H &kp FR_G &kp FR_COMM &kp FR_K &kp LGUI  
-                                                  &mo 2 &kp SPACE &kp RET  &kp BSPC &kp LSHFT &mo 1
+&kp TAB     &kp FR_Q    &kp FR_C    &kp FR_O    &kp FR_P    &kp FR_W    &kp FR_J    &kp FR_M    &kp FR_D    &kp FR_QUOT &kp FR_Y    &kp DEL 
+&kp LSHFT   &kp FR_A    &kp FR_S    &kp FR_E    &kp FR_N    &kp FR_F    &kp FR_L    &kp FR_R    &kp FR_T    &kp FR_I    &kp FR_U    &kp LALT 
+&kp LCTRL   &kp FR_Z    &kp FR_X    &kp FR_MINS &kp FR_V    &kp FR_B    &kp FR_DOT  &kp FR_H    &kp FR_G    &kp FR_COMM &kp FR_K    &kp LGUI 
+                                    &mo 2       &kp SPACE   &kp RET     &kp BSPC    &kp LSHFT   &mo 1
             >;
         };
 
         acc {
             display-name = "ACC";
             bindings = <
-                &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans  
-                &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans  
-                &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans  
-                              &trans &trans &trans &trans  &trans &trans &trans &trans
+&trans      &trans      &kp FR_CCED &trans      &trans      &trans      &trans      &trans      &trans      &kp FR_DQUO &trans      &trans 
+&trans      &kp FR_AGRV &kp FR_EACU &kp FR_EGRV &trans      &trans      &trans      &trans      &trans      &trans      &kp FR_UGRV &trans 
+&trans      &trans      &kp FR_UNDS &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans 
+                                    &trans      &trans      &trans      &trans      &trans      &trans
             >;
         };
 
         sym {
             display-name = "SYM";
             bindings = <
-&ESC   &kp FR_HAT  &kp FR_LABK &kp FR_RABK &kp FR_DLR  &kp FR_PERC  &kp F2 &kp F4 &none &kp LG(FR_SCLN) &none            &trans  
-&trans &kp FR_LCBR &kp FR_LPRN &kp FR_RPRN &kp FR_RBRC &kp FR_AMPR  &kp F5 &kp F8 &none &kp LC(FR_UGRV) &kp LG(FR_E)     &trans  
-&trans &kp FR_TILD &kp FR_LBRC &kp FR_RBRC &kp FR_HASH &kp RA(N3)   &none  &none  &none &kp PRINTSCREEN &kp K_CALCULATOR &trans  
-                                   &trans &kp LC(LS(SPACE)) &trans  &trans &trans &trans
+&ESC        &kp FR_HAT  &kp FR_LABK &kp FR_RABK &kp FR_DLR  &kp FR_PERC &kp F2     &kp F4      &none   &kp LG(FR_SCLN) &none        &trans 
+&trans      &kp FR_LCBR &kp FR_LPRN &kp FR_RPRN &kp FR_RBRC &kp FR_AMPR &kp F5     &kp F8      &none   &kp LC(FR_UGRV) &kp LG(FR_E) &trans 
+&trans      &kp FR_TILD &kp FR_LBRC &kp FR_RBRC &kp FR_UNDS &kp FR_HASH &none      &none       &none &kp PRINTSCREEN &kp K_CALCULATOR &trans 
+                                    &trans   &kp LC(LS(SPACE)) &trans   &trans     &trans      &trans
             >;
         };
 
         nav {
             display-name = "NAV";
             bindings = <
-&trans &kp LC(FR_S) &kp LG(LS(LEFT)) &kp UP       &kp LG(LS(RIGHT)) &kp LG(UP)    &kp KP_PLUS  &kp FR_7 &kp FR_8 &kp FR_9 &kp KP_MULTIPLY &trans  
-&trans &kp LC(FR_Z) &kp LEFT         &kp DOWN     &kp RIGHT         &kp LG(DOWN)  &kp KP_MINUS &kp FR_4 &kp FR_5 &kp FR_6 &kp KP_DIVIDE   &trans  
-&trans &kp LC(FR_Y) &kp LC(FR_X)     &kp LC(FR_C) &kp LC(FR_V)      &kp LG(FR_V)  &kp KP_DOT   &kp FR_1 &kp FR_2 &kp FR_3 &kp KP_EQUAL    &trans  
-                                                            &trans &trans &trans  &trans &trans &kp FR_0
+&trans &kp LC(FR_S) &kp LG(LS(LEFT)) &kp UP &kp LG(LS(RIGHT)) &kp LG(UP) &kp FR_PLUS &kp FR_7   &kp FR_8    &kp FR_9    &kp FR_ASTR &trans 
+&trans &kp LC(FR_Z) &kp LEFT         &kp DOWN   &kp RIGHT  &kp LG(DOWN) &kp FR_MINS &kp FR_4    &kp FR_5    &kp FR_6    &kp FR_SLSH &trans 
+&trans &kp LC(FR_Y) &kp LC(FR_X) &kp LC(FR_C) &kp LC(FR_V) &kp LG(FR_V) &kp KP_DOT  &kp FR_1    &kp FR_2    &kp FR_3    &kp FR_EQL  &trans 
+                                    &trans      &trans      &trans      &trans      &trans      &kp FR_0
             >;
         };
 
         mouse {
             display-name = "MOU";
             bindings = <
-                &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans  
-                &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans  
-                &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans  
-                            &mkp MCLK &mkp LCLK &mkp RCLK  &mkp LCLK &mkp RCLK &mkp MCLK
+&trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans 
+&trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans 
+&trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans 
+                                    &mkp MCLK   &mkp LCLK   &mkp RCLK   &mkp LCLK   &mkp RCLK   &mkp MCLK
             >;
         };
 
@@ -78,3 +78,13 @@
         extra_3 { status = "reserved"; };
     };
 };
+
+// &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans 
+// &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans 
+// &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans 
+//                                     &trans      &trans      &trans      &trans      &trans      &trans
+
+// &kp         &kp         &kp         &kp         &kp         &kp         &kp         &kp         &kp         &kp         &kp         &kp 
+// &kp         &kp         &kp         &kp         &kp         &kp         &kp         &kp         &kp         &kp         &kp         &kp 
+// &kp         &kp         &kp         &kp         &kp         &kp         &kp         &kp         &kp         &kp         &kp         &kp 
+//                                     &kp         &kp         &kp         &kp         &kp         &kp
