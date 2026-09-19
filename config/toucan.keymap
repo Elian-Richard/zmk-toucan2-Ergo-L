@@ -46,9 +46,9 @@
         sym {
             display-name = "SYM";
             bindings = <
-&ESC        &kp FR_HAT  &kp FR_LABK &kp FR_RABK &kp FR_DLR  &kp FR_PERC &kp F2     &kp F4      &none   &kp LG(FR_SCLN) &none        &trans 
-&trans      &kp FR_LCBR &kp FR_LPRN &kp FR_RPRN &kp FR_RBRC &kp FR_AMPR &kp F5     &kp F8      &none   &kp LC(FR_UGRV) &kp LG(FR_E) &trans 
-&trans      &kp FR_TILD &kp FR_LBRC &kp FR_RBRC &kp FR_UNDS &kp FR_HASH &none      &none       &none &kp PRINTSCREEN &kp K_CALCULATOR &trans 
+&kp ESC     &kp FR_HAT  &kp FR_LABK &kp FR_RABK &kp FR_DLR  &kp FR_PERC &kp F2     &kp F4      &none        &kp LG(FR_SCLN) &none               &trans 
+&trans      &kp FR_LCBR &kp FR_LPRN &kp FR_RPRN &kp FR_RBRC &kp FR_AMPR &kp F5     &kp F8      &none        &kp LC(FR_UGRV) &kp LG(FR_E)        &trans 
+&trans      &kp FR_TILD &kp FR_LBRC &kp FR_RBRC &kp FR_UNDS &kp FR_HASH &none      &none       &none        &kp PRINTSCREEN &kp K_CALCULATOR    &trans 
                                     &trans   &kp LC(LS(SPACE)) &trans   &trans     &trans      &trans
             >;
         };
@@ -56,10 +56,10 @@
         nav {
             display-name = "NAV";
             bindings = <
-&trans &kp LC(FR_S) &kp LG(LS(LEFT)) &kp UP &kp LG(LS(RIGHT)) &kp LG(UP) &kp FR_PLUS &kp FR_7   &kp FR_8    &kp FR_9    &kp FR_ASTR &trans 
-&trans &kp LC(FR_Z) &kp LEFT         &kp DOWN   &kp RIGHT  &kp LG(DOWN) &kp FR_MINS &kp FR_4    &kp FR_5    &kp FR_6    &kp FR_SLSH &trans 
-&trans &kp LC(FR_Y) &kp LC(FR_X) &kp LC(FR_C) &kp LC(FR_V) &kp LG(FR_V) &kp KP_DOT  &kp FR_1    &kp FR_2    &kp FR_3    &kp FR_EQL  &trans 
-                                    &trans      &trans      &trans      &trans      &trans      &kp FR_0
+&trans &kp LC(FR_S) &kp LG(LS(LEFT))    &kp UP          &kp LG(LS(RIGHT))   &kp LG(UP)      &kp FR_PLUS &kp FR_7    &kp FR_8    &kp FR_9    &kp FR_ASTR &trans 
+&trans &kp LC(FR_Z) &kp LEFT            &kp DOWN        &kp RIGHT           &kp LG(DOWN)    &kp FR_MINS &kp FR_4    &kp FR_5    &kp FR_6    &kp FR_SLSH &trans 
+&trans &kp LC(FR_Y) &kp LC(FR_X)        &kp LC(FR_C)    &kp LC(FR_V)        &kp LG(FR_V)    &kp KP_DOT  &kp FR_1    &kp FR_2    &kp FR_3    &kp FR_EQL  &trans 
+                                        &trans          &trans              &trans          &trans      &trans      &kp FR_0
             >;
         };
 
