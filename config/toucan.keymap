@@ -30,8 +30,8 @@
             flavor = "balanced";
             tapping-term-ms = <200>;
             bindings = <&mo>, <&sl>;
-        }
-    }
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
