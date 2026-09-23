@@ -25,7 +25,7 @@
 
         // Enables switching between layers Accents and Symbols by performing a tap-dance sequence.
         mo_sl: behavior_mo_sl {
-            compatible = "zmk,behavior-tap-dance";
+            compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
