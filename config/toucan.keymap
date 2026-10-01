@@ -23,7 +23,6 @@
 
     behaviors {
 
-        // Enables switching between layers Accents and Symbols by performing a tap-dance sequence.
         mo_sl: behavior_mo_sl {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -31,6 +30,110 @@
             tapping-term-ms = <200>;
             bindings = <&mo>, <&sl>;
         };
+
+        // LS(') = !
+        QUOT_EXLM: QUOT_EXLM {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp FR_QUOT>, <&kp FR_EXLM>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }
+
+        // LS(-) = ?
+        MINS_QUES: MINS_QUES {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp FR_MINS>, <&kp FR_QUES>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }
+
+        // LS(.) = :
+        DOT_COLN: DOT_COLN {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp FR_DOT>, <&kp FR_COLN>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }
+
+        // LS(,) = ;
+        COMM_SCLN: COMM_SCLN {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp FR_COMM>, <&kp FR_SCLN>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }
+
+        // LS($) = €
+        DLR_EURO: DLR_EURO {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp FR_DLR>, <&kp FR_EURO>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }
+
+        // LS(%) = °
+        PERC_DEG: PERC_DEG {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp FR_PERC>, <&kp FR_DEG>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }
+
+        // LS(&) = @
+        AMPR_AT: AMPR_AT {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp FR_AMPR>, <&kp FR_AT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }
+
+        // LS([) = |
+        LBRC_PIPE: LBRC_PIPE {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp FR_LBRC>, <&kp FR_PIPE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }
+
+        // LS(]) = \
+        RBRC_BSLS: RBRC_BSLS {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp FR_RBRC>, <&kp FR_BSLS>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }
+
+        // LS(#) = §
+        HASH_SECT: HASH_SECT {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp FR_HASH>, <&kp FR_SECT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }
+
+        // LS(F1) = F10
+        F1_F10: F1_F10 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F1>, <&kp F10>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }
+
+        // LS(F2) = F11
+        F2_F11: F2_F11 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F2>, <&kp F11>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }
+
+        // LS(F3) = F12
+        F3_F12: F3_F12 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F3>, <&kp F12>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }
     };
 
     keymap {
@@ -39,9 +142,9 @@
         base {
             display-name = "BASE";
             bindings = <
-&kp TAB     &kp FR_Q    &kp FR_C    &kp FR_O    &kp FR_P    &kp FR_W    &kp FR_J    &kp FR_M    &kp FR_D    &kp FR_QUOT &kp FR_Y    &kp DEL 
+&kp TAB     &kp FR_Q    &kp FR_C    &kp FR_O    &kp FR_P    &kp FR_W    &kp FR_J    &kp FR_M    &kp FR_D    &QUOT_EXLM  &kp FR_Y    &kp DEL 
 &kp LSHFT   &kp FR_A    &kp FR_S    &kp FR_E    &kp FR_N    &kp FR_F    &kp FR_L    &kp FR_R    &kp FR_T    &kp FR_I    &kp FR_U    &kp LALT 
-&kp LCTRL   &kp FR_Z    &kp FR_X    &kp FR_MINS &kp FR_V    &kp FR_B    &kp FR_DOT  &kp FR_H    &kp FR_G    &kp FR_COMM &kp FR_K    &kp LGUI 
+&kp LCTRL   &kp FR_Z    &kp FR_X    &MINS_QUES  &kp FR_V    &kp FR_B    &DOT_COLN   &kp FR_H    &kp FR_G    &COMM_SCLN  &kp FR_K    &kp LGUI 
                                     &mo 3       &kp SPACE   &kp RET     &kp BSPC    &kp LSHFT   &mo_sl 2 1
             >;
         };
@@ -59,9 +162,9 @@
         sym {
             display-name = "SYM";
             bindings = <
-&kp ESC     &kp FR_HAT  &kp FR_LABK &kp FR_RABK &kp FR_DLR  &kp FR_PERC &kp F2     &kp F4      &none        &kp LG(FR_SCLN) &none               &trans 
-&trans      &kp FR_LCBR &kp FR_LPRN &kp FR_RPRN &kp FR_RCBR &kp FR_AMPR &kp F5     &kp F8      &none        &kp LC(FR_UGRV) &kp LG(FR_E)        &trans 
-&trans      &kp FR_TILD &kp FR_LBRC &kp FR_RBRC &kp FR_UNDS &kp FR_HASH &none      &none       &none        &kp PRINTSCREEN &kp K_CALCULATOR    &trans 
+&kp ESC     &kp FR_HAT  &kp FR_LABK &kp FR_RABK &DLR_EURO   &PERC_DEG   &F1_F10    &F2_F11     &F3_F12      &kp LG(FR_SCLN) &none               &trans 
+&trans      &kp FR_LCBR &kp FR_LPRN &kp FR_RPRN &kp FR_RCBR &AMPR_AT    &kp F4     &kp F5      &kp F6       &kp LC(FR_UGRV) &kp LG(FR_E)        &trans 
+&trans      &kp FR_TILD &LBRC_PIPE  &RBRC_BSLS  &kp FR_UNDS &HASH_SECT  &kp F7     &kp F8      &kp F9       &kp PRINTSCREEN &kp K_CALCULATOR    &trans 
                                     &trans   &kp LC(LS(SPACE)) &trans   &trans     &trans      &trans
             >;
         };
