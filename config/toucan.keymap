@@ -138,7 +138,7 @@
 
         // œ, Œ
         o_e: o_e { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
-            bindings = <&o_e_m>, <&o_e_M>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+            bindings = <&o_e_min>, <&o_e_maj>; mods = <(MOD_LSFT|MOD_RSFT)>; };
 
         // ù, Ù
         u_grav: u_grav { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
@@ -230,11 +230,11 @@
 			bindings = <&macro_tap &kp FR_DIAE &kp LS(FR_O)>; };
 
         // œ, Œ
-        o_e_m: o_e_m { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        o_e_min: o_e_min { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_press   &kp LALT>,
                        <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N5 &kp KP_N6>,
                        <&macro_release &kp LALT>; };
-        o_e_M: o_e_M { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        o_e_maj: o_e_maj { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_press   &kp LALT>,
                        <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N0>,
                        <&macro_release &kp LALT>; };
