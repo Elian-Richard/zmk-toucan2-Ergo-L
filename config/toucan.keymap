@@ -90,51 +90,51 @@
 
         // à, À
         a_grav: a_grav { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
-            bindings = <&kp FR_AGRV>, <&a_M_grav>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+            bindings = <&kp FR_AGRV>, <&a_grav_maj>; mods = <(MOD_LSFT|MOD_RSFT)>; };
         
         // â, Â
         a_circ: a_circ { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
-            bindings = <&a_m_circ>, <&a_M_circ>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+            bindings = <&a_circ_min>, <&a_circ_maj>; mods = <(MOD_LSFT|MOD_RSFT)>; };
         
         // ä, Ä
         a_trem: a_trem { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
-            bindings = <&a_m_trem>, <&a_M_trem>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+            bindings = <&a_trem_min>, <&a_trem_maj>; mods = <(MOD_LSFT|MOD_RSFT)>; };
         
         // ç, Ç
         c_ced: c_ced { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
-            bindings = <&kp FR_CCED>, <&c_M_ced>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+            bindings = <&kp FR_CCED>, <&c_ced_maj>; mods = <(MOD_LSFT|MOD_RSFT)>; };
         
         // é, É
         e_acu: e_acu { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
-            bindings = <&kp FR_EACU>, <&e_M_acu>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+            bindings = <&kp FR_EACU>, <&e_acu_maj>; mods = <(MOD_LSFT|MOD_RSFT)>; };
         
         // è, È
         e_grav: e_grav { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
-            bindings = <&kp FR_EGRV>, <&e_M_grav>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+            bindings = <&kp FR_EGRV>, <&e_grav_maj>; mods = <(MOD_LSFT|MOD_RSFT)>; };
 
         // ê, Ê
         e_circ: e_circ { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
-            bindings = <&e_m_circ>, <&e_M_circ>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+            bindings = <&e_circ_min>, <&e_circ_maj>; mods = <(MOD_LSFT|MOD_RSFT)>; };
 
         // ë, Ë
         e_trem: e_trem { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
-            bindings = <&e_m_trem>, <&e_M_trem>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+            bindings = <&e_trem_min>, <&e_trem_maj>; mods = <(MOD_LSFT|MOD_RSFT)>; };
 
         // î, Î
         i_circ: i_circ { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
-            bindings = <&i_m_circ>, <&i_M_circ>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+            bindings = <&i_circ_min>, <&i_circ_maj>; mods = <(MOD_LSFT|MOD_RSFT)>; };
 
         // ï, Ï
         i_trem: i_trem { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
-            bindings = <&i_m_trem>, <&i_M_trem>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+            bindings = <&i_trem_min>, <&i_trem_maj>; mods = <(MOD_LSFT|MOD_RSFT)>; };
 
         // ô, Ô
         o_circ: o_circ { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
-            bindings = <&o_m_circ>, <&o_M_circ>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+            bindings = <&o_circ_min>, <&o_circ_maj>; mods = <(MOD_LSFT|MOD_RSFT)>; };
 
         // ö, Ö
         o_trem: o_trem { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
-            bindings = <&o_m_trem>, <&o_M_trem>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+            bindings = <&o_trem_min>, <&o_trem_maj>; mods = <(MOD_LSFT|MOD_RSFT)>; };
 
         // œ, Œ
         o_e: o_e { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
@@ -142,15 +142,15 @@
 
         // ù, Ù
         u_grav: u_grav { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
-            bindings = <&kp FR_UGRV>, <&u_M_grav>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+            bindings = <&kp FR_UGRV>, <&u_grav_maj>; mods = <(MOD_LSFT|MOD_RSFT)>; };
 
         // û, Û
         u_circ: u_circ { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
-            bindings = <&u_m_circ>, <&u_M_circ>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+            bindings = <&u_circ_min>, <&u_circ_maj>; mods = <(MOD_LSFT|MOD_RSFT)>; };
 
         // ü, Ü
         u_trem: u_trem { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>;
-            bindings = <&u_m_trem>, <&u_M_trem>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+            bindings = <&u_trem_min>, <&u_trem_maj>; mods = <(MOD_LSFT|MOD_RSFT)>; };
     };
 
     macros {
@@ -158,75 +158,75 @@
         // Lettres accentuées : minuscules et Majuscules
 
         // à, À
-        // &a_m_grav = &kp FR_AGRV
-        a_M_grav: a_M_grav { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        // &a_grav_min = &kp FR_AGRV
+        a_grav_maj: a_grav_maj { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_tap &kp FR_GRV &kp LS(FR_A)>; };
         
         // â, Â
-        a_m_circ: a_m_circ { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        a_circ_min: a_circ_min { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_tap &kp FR_CIRC &kp FR_A>; };
-        a_M_circ: a_M_circ { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        a_circ_maj: a_circ_maj { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_tap &kp FR_CIRC &kp LS(FR_A)>; };
 
         // ä, Ä
-        a_m_trem: a_m_trem { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        a_trem_min: a_trem_min { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_tap &kp FR_DIAE &kp FR_A>; };
-        a_M_trem: a_M_trem { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        a_trem_maj: a_trem_maj { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_tap &kp FR_DIAE &kp LS(FR_A)>; };
 
         // ç, Ç
-        // &c_m_ced = &kp FR_CCED
-        c_M_ced: c_M_ced { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        // &c_ced_min = &kp FR_CCED
+        c_ced_maj: c_ced_maj { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_press   &kp LALT>,
                        <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N9>,
                        <&macro_release &kp LALT>; };
 
         // é, É
-        // &e_m_acu = &kp FR_EACU
-        e_M_acu: e_M_acu { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        // &e_acu_min = &kp FR_EACU
+        e_acu_maj: e_acu_maj { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_press   &kp LALT>,
                        <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N1>,
                        <&macro_release &kp LALT>; };
 
         // è, È
-        // &e_m_grav = &kp FR_EGRV
-        e_M_grav: e_M_grav { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        // &e_grav_min = &kp FR_EGRV
+        e_grav_maj: e_grav_maj { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_tap &kp FR_GRV &kp LS(FR_E)>; };
 
         // ê, Ê
-        e_m_circ: e_m_circ { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        e_circ_min: e_circ_min { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_tap &kp FR_CIRC &kp FR_E>; };
-        e_M_circ: e_M_circ { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        e_circ_maj: e_circ_maj { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_tap &kp FR_CIRC &kp LS(FR_E)>; };
 
         // ë, Ë
-        e_m_trem: e_m_trem { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        e_trem_min: e_trem_min { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_tap &kp FR_DIAE &kp FR_E>; };
-        e_M_trem: e_M_trem { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        e_trem_maj: e_trem_maj { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_tap &kp FR_DIAE &kp LS(FR_E)>; };
 
         // î, Î
-        i_m_circ: i_m_circ { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        i_circ_min: i_circ_min { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_tap &kp FR_CIRC &kp FR_I>; };
-        i_M_circ: i_M_circ { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        i_circ_maj: i_circ_maj { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_tap &kp FR_CIRC &kp LS(FR_I)>; };
 
         // ï, Ï
-        i_m_trem: i_m_trem { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        i_trem_min: i_trem_min { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_tap &kp FR_DIAE &kp FR_I>; };
-        i_M_trem: i_M_trem { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        i_trem_maj: i_trem_maj { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_tap &kp FR_DIAE &kp LS(FR_I)>; };
 
         // ô, Ô
-        o_m_circ: o_m_circ { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        o_circ_min: o_circ_min { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_tap &kp FR_CIRC &kp FR_O>; };
-        o_M_circ: o_M_circ { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        o_circ_maj: o_circ_maj { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_tap &kp FR_CIRC &kp LS(FR_O)>; };
 
         // ö, Ö
-        o_m_trem: o_m_trem { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        o_trem_min: o_trem_min { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_tap &kp FR_DIAE &kp FR_O>; };
-        o_M_trem: o_M_trem { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        o_trem_maj: o_trem_maj { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_tap &kp FR_DIAE &kp LS(FR_O)>; };
 
         // œ, Œ
@@ -240,20 +240,20 @@
                        <&macro_release &kp LALT>; };
 
         // ù, Ù
-        // &u_m_grav = &kp FR_UGRV
-        u_M_grav: u_M_grav { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        // &u_grav_min = &kp FR_UGRV
+        u_grav_maj: u_grav_maj { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_tap &kp FR_GRV &kp LS(FR_U)>; };
 
         // û, Û
-        u_m_circ: u_m_circ { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        u_circ_min: u_circ_min { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_tap &kp FR_CIRC &kp FR_U>; };
-        u_M_circ: u_M_circ { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        u_circ_maj: u_circ_maj { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_tap &kp FR_CIRC &kp LS(FR_U)>; };
 
         // ü, Ü
-        u_m_trem: u_m_trem { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        u_trem_min: u_trem_min { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_tap &kp FR_DIAE &kp FR_U>; };
-        u_M_trem: u_M_trem { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
+        u_trem_maj: u_trem_maj { compatible = "zmk,behavior-macro";	#binding-cells = <0>; wait-ms = <40>; tap-ms = <40>;
 			bindings = <&macro_tap &kp FR_DIAE &kp LS(FR_U)>; };
 
     };
