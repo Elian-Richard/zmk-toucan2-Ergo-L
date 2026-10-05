@@ -9,6 +9,11 @@
 #define SYM  2
 #define NAV  3
 
+&sl {
+    // Permet d'utiliser un modificateur (ex : Majuscule) tout en restant sur la couche symbole tant que le modificateur est maintenu.
+    /delete-property/ quick-release;
+};
+
 / {
 
     combos {
@@ -30,11 +35,6 @@
             flavor = "balanced";
             tapping-term-ms = <200>;
             bindings = <&mo>, <&sl>;
-        };
-
-        &sl {
-            /delete-property/ quick-release; // Permet d'utiliser un modificateur (ex : Majuscule) tout en restant sur la couche symbole
-                                             // tant que le modificateur est maintenu.
         };
 
         // Majuscule + Symboles
